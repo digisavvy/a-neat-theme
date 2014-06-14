@@ -266,3 +266,8 @@ add_action('wp_head', 'neat_add_google_fonts' );
 function neat_add_google_fonts() {
 	echo "<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>";
 }
+
+add_action('wp_footer', 'neat_add_refill_scripts' );
+function neat_add_refill_scripts() { ?>
+
+<?php }
