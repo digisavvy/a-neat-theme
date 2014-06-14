@@ -1,0 +1,8 @@
+/codekit-config.json
+*.codekit
+
+# sass cache
+**/.sass-cache
+**/.sass-cache/*
+**/_grid-settings.scss
+/README.html

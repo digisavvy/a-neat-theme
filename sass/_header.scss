@@ -1,0 +1,125 @@
+.site-branding {
+	@include outer-container;
+	text-align: center;
+
+	.site-title {
+		@include media($sm) {
+			@include fontSize(35px);
+			@include span-columns( 4 );
+		}
+		@include media($smbg) {
+			@include fontSize(55px);
+		}
+		@include media($md) {
+			@include fontSize(75px);
+			@include span-columns(4);
+			@include omega( 2n table );
+		}
+		@include media($hg) {
+			@include span-columns( 5 );
+		}
+
+		float: left;
+		font-family: $title;
+		margin-top: 0;
+
+	}
+
+	.site-description {
+		@include fontSize(20px);
+		@include media($sm) {
+			@include fontSize(15px);
+		}
+		@include media($smbg) {
+			@include fontSize(18px);
+		}
+		@include media($md) {
+			@include fontSize(25px);
+		}
+		font-family: $content;
+		font-style: italic;
+	}
+	.cta-buttons {
+		@include media($sm) {
+			@include span-columns( 4 );
+			padding: 0 10px;
+		}
+		@include media($md) {
+			@include span-columns( 2 );
+		}
+		@include media($hg) {
+			@include span-columns( 6 );
+			@include shift( 1 );
+		}
+
+		.genericon {
+			@include fontSize(32px);
+			left: 5px;
+			position: absolute;
+			top: 18px;
+
+			@include media($hg) {
+				left: -11px;
+			}
+		}
+	}
+	.github {
+		@include neat-buttons($border-color: #1ABC9C, $border-radius: 50px, $button-padding: 20px, $button-bg: #1ABC9C );
+		color: #fff;
+		float: left;
+		font-weight: 700;
+		margin-left: 9%;
+		clear: none;
+		padding-left: 40px;
+		position: relative;
+
+		&:hover {
+			padding-left: 40px;
+		}
+
+		@include media($sm) {
+			@include span-columns(4);
+			margin-left: 0;
+		}
+		@include media($smbg) {
+			@include span-columns( 2 );
+		}
+		@include media($md) {
+			@include span-columns( 5 );
+		}
+		@include media($hg) {
+			@include span-columns( 6 );
+			@include omega( 2n table );
+		}
+	}
+	.download {
+		@extend .github;
+		background-color: #53aee0;
+		border-color: #53aee0;
+		margin-left: 12%;
+
+		&:hover {
+			background-color: darken(#53aee0, 10);
+			border-color: darken(#53aee0, 40);
+
+			@include media($sm) {
+			}
+		}
+
+		@include media($sm) {
+			@include span-columns(4);
+			margin-left: 0;
+		}
+		@include media($smbg) {
+			@include span-columns( 2 );
+		}
+		@include media($md) {
+			@include span-columns( 5 );
+		}
+		@include media($hg) {
+			@include span-columns( 6 );
+			padding-left: 40px;
+		}
+	}
+
+}
