@@ -81,6 +81,8 @@ ul.nav-menu li {
 	float: left;
 	margin-bottom: 2rem;
 	max-width: 100%;
+	position: fixed;
+	z-index: 3;
 	width: 100%;
 
 	.flexnav {

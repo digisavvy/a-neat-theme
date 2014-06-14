@@ -1,3 +1,9 @@
+header#masthead {
+	padding-top: 100px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
 .site-branding {
 	@include outer-container;
 	text-align: center;
