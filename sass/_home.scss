@@ -57,7 +57,12 @@
 	min-height: 100px;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
+
+	h2 {
+		@include fontSize(28px);
+	}
 }
+
 .post-id-6 {
 	background-color: #53aee0;
 	color: #fff;
@@ -69,5 +74,33 @@
 		text-shadow: 2px 2px 2px darken(#53aee0,15);
 		text-transform: none;
 		word-spacing: -1rem;
+	}
+	#features {
+		@include fill-parent;
+
+		ul#features {
+			@include pad( 0 40px 0 40px );
+
+			li {
+				display: block;
+				border: solid 5px #fff;
+				@include pad( 30px default );
+				margin-bottom: 25px;
+
+				@include media($sm) {
+					@include fill-parent;
+				}
+				@include media($md) {
+					@include span-columns( 2.85 of 6 );
+					display: inline;
+					float: left;
+				}
+				@include media($hg) {
+					@include span-columns( 3.9 of 12 );
+					display: inline;
+
+				}
+			}
+		}
 	}
 }
