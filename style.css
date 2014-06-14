@@ -734,6 +734,7 @@ html {
   font-size: 62.5; }
 
 body {
+  background-image: url(images/gplaypattern_@2X.png);
   font-size: 16px;
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1246,17 +1247,6 @@ body {
     .success a:hover {
       color: black; }
 
-.error {
-  background: red;
-  color: black;
-  font-weight: bold;
-  margin-bottom: 0.75em;
-  padding: 0.75em; }
-  .error a {
-    color: black; }
-    .error a:hover {
-      color: black; }
-
 .accordion-tabs-minimal {
   *zoom: 1;
   border: 1px solid #dddddd;
@@ -1544,6 +1534,12 @@ body {
   visibility: visible; }
 .modal .modal-state:checked + .modal-window .modal-inner {
   top: 0; }
+
+header#masthead {
+  padding-top: 100px;
+  position: fixed;
+  z-index: 1;
+  width: 100%; }
 
 .site-branding {
   *zoom: 1;
@@ -2041,6 +2037,8 @@ ul.nav-menu li {
   float: left;
   margin-bottom: 2rem;
   max-width: 100%;
+  position: fixed;
+  z-index: 3;
   width: 100%; }
   #primary-nav .flexnav ul {
     margin-bottom: 0;
@@ -2173,10 +2171,14 @@ object {
 .infinity-end.neverending .site-footer {
   display: block; }
 
-#content .entry-content a, #content .entry-content a:visited {
-  border-bottom: solid 1px red; }
-#content .entry-meta a, #content .entry-meta a:visited {
-  border-bottom: solid 1px red; }
+#content {
+  position: relative;
+  z-index: 2;
+  padding-top: 300px; }
+  #content .entry-content a, #content .entry-content a:visited {
+    border-bottom: solid 1px red; }
+  #content .entry-meta a, #content .entry-meta a:visited {
+    border-bottom: solid 1px red; }
 
 /* =Page Templates
 ----------------------------------------------- */
