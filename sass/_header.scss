@@ -19,10 +19,21 @@
 			@include span-columns( 5 );
 		}
 
-		float: left;
-		font-family: $title;
-		margin-top: 0;
 
+		float: left;
+		font-family: "strenuous", $title;
+		// font-style: italic;
+		font-weight: 400;
+		letter-spacing: 8px;
+		margin-top: 0;
+		text-shadow: 3px 3px 0px #f3f3f3, 5px 5px 0px darken(#f47a33, 20);
+		text-transform: none;
+
+		a, a:visited {
+			color: #961C22;
+
+
+		}
 	}
 
 	.site-description {
