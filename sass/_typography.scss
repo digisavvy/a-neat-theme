@@ -54,10 +54,14 @@ h1 {
 h2 {
 	@include fontSize(50px);
 	font-family: $title;
+	text-transform: none;
 }
 h3 {
 	@include fontSize(35px);
 	font-family: $title;
+	text-shadow: 2px 2px 0 darken(#53aee0, 15);
+	text-transform: none;
+	@include fontSize(25px);
 }
 h4 {
 	@include fontSize(24px);
