@@ -265,7 +265,10 @@ endif;
 add_action('wp_head', 'neat_add_google_fonts' );
 function neat_add_google_fonts() {
 	echo "<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>";
-}
+	?>
+	<script type="text/javascript" src="//use.typekit.net/tzo3jvo.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<?php }
 
 add_action('wp_footer', 'neat_add_refill_scripts' );
 function neat_add_refill_scripts() { ?>
