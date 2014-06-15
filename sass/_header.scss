@@ -1,8 +1,8 @@
 header#masthead {
-	padding-top: 100px;
+	@include fill-parent;
+	top: 125px;
 	position: fixed;
 	z-index: 1;
-	width: 100%;
 }
 .site-branding {
 	@include outer-container;
@@ -72,11 +72,19 @@ header#masthead {
 		.genericon {
 			@include fontSize(32px);
 			left: 5px;
-			position: absolute;
 			top: 18px;
 
+			@include media($sm) {
+				position: static;
+			}
+			@include media($smbg) {
+				position: absolute;
+			}
 			@include media($hg) {
 				left: -11px;
+			}
+			@include media(min-width 768px max-width 1140px) {
+				left: -45px;
 			}
 		}
 	}
