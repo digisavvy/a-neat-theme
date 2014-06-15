@@ -740,6 +740,16 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   word-break: break-word; }
 
+@media screen and (min-width: 200px) {
+  .wrap {
+    padding-top: 410px; } }
+@media screen and (min-width: 480px) {
+  .wrap {
+    padding-top: 385px; } }
+@media screen and (min-width: 768px) {
+  .wrap {
+    padding-top: 300px; } }
+
 #main {
   padding: 0 40px; }
 
@@ -1536,10 +1546,10 @@ body {
   top: 0; }
 
 header#masthead {
-  padding-top: 100px;
+  width: 100%;
+  top: 125px;
   position: fixed;
-  z-index: 1;
-  width: 100%; }
+  z-index: 1; }
 
 .site-branding {
   *zoom: 1;
@@ -1643,11 +1653,19 @@ header#masthead {
     font-size: 32px;
     font-size: 2rem;
     left: 5px;
-    position: absolute;
     top: 18px; }
+    @media screen and (min-width: 200px) {
+      .site-branding .cta-buttons .genericon {
+        position: static; } }
+    @media screen and (min-width: 480px) {
+      .site-branding .cta-buttons .genericon {
+        position: absolute; } }
     @media screen and (min-width: 1140px) {
       .site-branding .cta-buttons .genericon {
         left: -11px; } }
+    @media screen and (min-width: 768px) and (max-width: 1140px) {
+      .site-branding .cta-buttons .genericon {
+        left: -45px; } }
   .site-branding .github, .site-branding .download {
     background: #1abc9c;
     border: solid 5px #1abc9c;
@@ -1873,8 +1891,7 @@ header#masthead {
       float: left;
       display: block;
       background-color: #a6a6a2;
-      overflow: visible;
-      width: 20%; }
+      overflow: visible; }
     .flexnav li a {
       border-left: 1px solid #acaca1;
       border-bottom: none; }
@@ -2034,6 +2051,8 @@ ul.nav-menu li {
   display: inline; }
 
 #primary-nav {
+  background: #a6a6a2;
+  border-bottom: 2px solid #777;
   float: left;
   margin-bottom: 2rem;
   max-width: 100%;
@@ -2173,8 +2192,8 @@ object {
 
 #content {
   position: relative;
-  z-index: 2;
-  padding-top: 300px; }
+  box-shadow: 0 0px 40px #333;
+  z-index: 2; }
   #content .entry-content a, #content .entry-content a:visited {
     border-bottom: solid 1px red; }
   #content .entry-meta a, #content .entry-meta a:visited {
@@ -2250,9 +2269,12 @@ object {
   display: none; }
 
 footer {
+  background-color: #000;
+  color: #f3f3f3;
   float: left;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 25px 40px;
+  text-align: center;
   width: 100%; }
   footer .site-info {
     margin: auto;
@@ -2354,10 +2376,17 @@ footer {
     .post-id-6 #features ul#features {
       padding: 0 40px 0 40px; }
       .post-id-6 #features ul#features li {
+        font-size: 20px;
+        font-size: 1.25rem;
         display: block;
+        font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
         border: solid 5px #fff;
         padding: 30px 2.12766%;
         margin-bottom: 25px; }
+        .post-id-6 #features ul#features li .dashicons, .post-id-6 #features ul#features li .fa {
+          font-size: 20px;
+          font-size: 1.25rem; }
         @media screen and (min-width: 200px) {
           .post-id-6 #features ul#features li {
             width: 100%; } }
@@ -2379,4 +2408,27 @@ footer {
             width: 31.06383%;
             display: inline; }
             .post-id-6 #features ul#features li:last-child {
-              margin-right: 0; } }
+              margin-right: 0; }
+            .post-id-6 #features ul#features li:nth-child(3n) {
+              margin-right: 0; }
+            .post-id-6 #features ul#features li:nth-child(3n+1) {
+              clear: left; } }
+
+.post-id-7 {
+  padding: 75px 0 75px 0;
+  background-color: #f3f3f3; }
+  .post-id-7 p {
+    width: 75%;
+    margin: auto; }
+  .post-id-7 h2 {
+    text-shadow: 2px 2px 0 silver; }
+
+.post-id-9 {
+  padding: 75px 0 75px 0;
+  background: #1abc9c;
+  color: #fff; }
+  .post-id-9 p {
+    width: 75%;
+    margin: auto; }
+  .post-id-9 h2 {
+    text-shadow: 2px 2px 0 #117964; }
