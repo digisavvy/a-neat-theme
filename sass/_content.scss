@@ -140,8 +140,8 @@ object {
 
 #content {
 	position: relative;
+	box-shadow: 0 0px 40px #333;
 	z-index: 2;
-	padding-top: 300px;
 
 	.entry-content {
 		a, a:visited {
