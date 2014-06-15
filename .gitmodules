@@ -1,0 +1,3 @@
+[submodule "wp-content/themes/a-neat-theme"]
+	path = wp-content/themes/a-neat-theme
+	url = https://github.com/digisavvy/a-neat-theme.git
