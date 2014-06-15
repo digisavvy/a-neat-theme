@@ -75,10 +75,14 @@ header#masthead {
 			top: 18px;
 
 			@include media($sm) {
-				position: static;
+				position: absolute;
+				left: -25%;
 			}
 			@include media($smbg) {
-				position: absolute;
+
+			}
+			@include media($md) {
+				left: 0;
 			}
 			@include media($hg) {
 				left: -11px;

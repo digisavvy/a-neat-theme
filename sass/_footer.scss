@@ -4,8 +4,10 @@ footer {
 	float: left;
 	margin: 0 auto;
 	padding: 25px 40px;
+	position: relative;
 	text-align: center;
 	width: 100%;
+	z-index: 2;
 
 	.site-info {
 		margin: auto;

@@ -748,7 +748,7 @@ body {
     padding-top: 385px; } }
 @media screen and (min-width: 768px) {
   .wrap {
-    padding-top: 300px; } }
+    padding-top: 340px; } }
 
 #main {
   padding: 0 40px; }
@@ -1656,10 +1656,11 @@ header#masthead {
     top: 18px; }
     @media screen and (min-width: 200px) {
       .site-branding .cta-buttons .genericon {
-        position: static; } }
-    @media screen and (min-width: 480px) {
+        position: absolute;
+        left: -25%; } }
+    @media screen and (min-width: 768px) {
       .site-branding .cta-buttons .genericon {
-        position: absolute; } }
+        left: 0; } }
     @media screen and (min-width: 1140px) {
       .site-branding .cta-buttons .genericon {
         left: -11px; } }
@@ -2274,8 +2275,10 @@ footer {
   float: left;
   margin: 0 auto;
   padding: 25px 40px;
+  position: relative;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   footer .site-info {
     margin: auto;
     width: 100%; }
