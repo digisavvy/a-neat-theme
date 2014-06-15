@@ -26,6 +26,10 @@
 	padding-bottom: 25rem;
 	padding-top: 5rem;
 
+	@include media($sm) {
+
+	}
+
 
 	h2 {
 		color: #fff;
@@ -82,10 +86,17 @@
 			@include pad( 0 40px 0 40px );
 
 			li {
+				@include fontSize(20px);
 				display: block;
+				font-family: $title;
+				font-weight: 700;
 				border: solid 5px #fff;
 				@include pad( 30px default );
 				margin-bottom: 25px;
+
+				.dashicons, .fa {
+					@include fontSize(20px);
+				}
 
 				@include media($sm) {
 					@include fill-parent;
@@ -97,10 +108,38 @@
 				}
 				@include media($hg) {
 					@include span-columns( 3.9 of 12 );
+					@include omega( 3n block );
 					display: inline;
 
 				}
 			}
 		}
+	}
+}
+.post-id-7 {
+	@include pad( 75px 0 75px 0 );
+	background-color: #f3f3f3;
+
+	p {
+		width: 75%;
+		margin: auto;
+	}
+
+	h2 {
+		text-shadow: 2px 2px 0 darken(#f3f3f3, 20);
+	}
+}
+.post-id-9 {
+	@include pad( 75px 0 75px 0 );
+	background: #1abc9c;
+	color: #fff;
+
+	p {
+		width: 75%;
+		margin: auto;
+	}
+
+	h2 {
+		text-shadow: 2px 2px 0 darken(#1abc9c, 15);
 	}
 }
