@@ -16,6 +16,16 @@ body {
 }
 
 .wrap {
+	@include media($sm) {
+		padding-top: 410px;
+	}
+	@include media($smbg) {
+		padding-top: 385px;
+	}
+	@include media($md) {
+		padding-top: 300px;
+	}
+
 }
 
 
